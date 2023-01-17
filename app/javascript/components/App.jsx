@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+import Header from "./Header";
+import Project from "./Project";
+import About from "./About";
+import ContactMe from "./ContactMe";
+import Footer from "./Footer";
 
 function App() {
     const [count, setCount] = useState(0);
     return (
-        <div>
-            <p>You clicked {count} times!</p>
-            <button className="btn btn-primary" onClick={() => setCount(count + 1)} >
-                Button
-            </button>
+        <div id="page-top">
+            <Header />
+            <Project />
+            <About />
+            <ContactMe />
+            <Footer />
         </div>
     );
 }
